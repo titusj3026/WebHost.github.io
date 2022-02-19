@@ -1,0 +1,22 @@
+<html>
+  <body>
+  
+  <script>
+function sendWebhook() {
+    var content = {"value1" : "test data"};
+    var url = "https://s16events.azure-automation.net/webhooks?token=<myToken>";
+    var options =  {
+    "method" : "post",
+    "contentType" : "application/json",
+    "payload" : JSON.stringify(content)
+};
+return UrlFetchApp.fetch(url, options);
+}
+</script>
+<input id="contact-submit" type="button" class="btn btn-transparent" value="Submit" onclick="sendWebhook()" />
+    
+  
+  </body>
+
+
+</html>
