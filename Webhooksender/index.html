@@ -6,13 +6,16 @@
     <title>Discord Webhook Tutorial</title>
   </head>
   <body>
+  <input type="text" name="txtJob" id="txtJob" value="Webhook here">
   <button onclick="sendMessage()">Send</button>
   </body>
 
   <script>
+  
     function sendMessage() {
+    var jobValue = document.getElementById('txtJob').value
       var request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/944732932881416232/M0H4UNIY1MLvUCg-tc0VFl_KuLKwgQFH0P9b6yYS6SKToVO9-N5SMrOWPNAbyLO0MJ-l");
+      request.open("POST", jobValue);
 
       request.setRequestHeader('Content-type', 'application/json');
 
@@ -62,8 +65,8 @@
     }
   ],
   "components": []
-
-      }
+}
+      
 
       request.send(JSON.stringify(params));
     }
